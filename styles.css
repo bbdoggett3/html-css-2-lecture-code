@@ -60,7 +60,31 @@ img {
 }
 
 .row {
+    height: 50vh;
     margin-bottom: 150px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+
+.row img {
+    /* width: 300px; */
+    height: 25vh;
+}
+
+.column {
+    height: 75vh;
+    border: 2px solid #56563A;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    
 }
 
 .overflow-section {
@@ -72,5 +96,7 @@ img {
     width: 150px;
     border: 2px solid black;
     margin: 0 auto;
+    overflow: scroll;
+    box-shadow: 5px 5px 3px /*blur radius is the 3px*/ violet;
 }
 
