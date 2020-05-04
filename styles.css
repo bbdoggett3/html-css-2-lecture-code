@@ -22,13 +22,41 @@ img {
     margin: 15px;
 }
 
+/*THIS IS WHERE THE PRACTICE STARTS*/
+.relative-position {
+    position: relative;
+    left: 25px;
+    bottom: 25px;
+    /* z-index: 1; */
+}
+
+.fixed-position {
+    position: fixed;
+    top: 0px;
+    left: 300px;
+
+}
+
+/* .absolute-position {
+    position: absolute;
+} */
+
 .ancestor {
     height: 200px;
     border: 2px solid black;
+    position: relative;
 }
 
 .child {
     width: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.sticky-position {
+    position: sticky;
+    top: 20px;
 }
 
 .row {
@@ -45,3 +73,4 @@ img {
     border: 2px solid black;
     margin: 0 auto;
 }
+
